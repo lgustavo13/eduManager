@@ -1,0 +1,37 @@
+[
+	{
+		"id":1,
+		"ra":12346,
+		"name":"Nome do aluno 1",
+		"degreeId":1,
+		"classId":1
+	},
+	{
+		"id":2,
+		"ra":456798,
+		"name":"Nome do aluno 2",
+		"degreeId":2,
+		"classId":1
+	},
+	{
+		"id":3,
+		"ra":752156,
+		"name":"Nome do aluno 3",
+		"degreeId":3,
+		"classId":2
+	},
+	{
+		"id":4,
+		"ra":852348,
+		"name":"Nome do aluno 4",
+		"degreeId":4,
+	  "classId":2
+	},
+	{
+		"id":5,
+		"ra":454643,
+		"name":"Nome do aluno 5",
+		"degreeId":6,
+	  	"classId":2
+	}
+]
