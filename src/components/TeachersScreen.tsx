@@ -27,11 +27,11 @@ interface TeachersScreenProps {
   allStudents: Student[];
 }
 
-const TeachersScreen: React.FC<TeachersScreenProps> = ({
+const TeachersScreen = ({
   relationships,
   setRelationships,
   allStudents,
-}) => {
+}: TeachersScreenProps) => {
   const [filterDegree, setFilterDegree] = useState<string>("");
   const [filterClass, setFilterClass] = useState<string>("");
 

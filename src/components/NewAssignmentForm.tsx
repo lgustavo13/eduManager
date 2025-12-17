@@ -13,6 +13,7 @@ import {
 import { FilterSelect } from "./FilterSelect";
 import { Button } from "./ui/button";
 import { Plus } from "lucide-react";
+import { Label } from "./ui/label";
 
 interface NewAssignmentProps {
   setRelationships: Dispatch<SetStateAction<Relationship[]>>;
@@ -67,9 +68,9 @@ export const NewAssignmentForm = ({
           <form onSubmit={handleAddRelationship} className="space-y-4">
             <div className="flex justify-between">
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">
+                <Label className="block text-sm font-medium text-slate-700 mb-1">
                   Professor
-                </label>
+                </Label>
                 <FilterSelect
                   filter={newTeacherId.toString()}
                   setFilter={(id) => setNewTeacherId(Number(id))}
@@ -79,9 +80,9 @@ export const NewAssignmentForm = ({
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">
+                <Label className="block text-sm font-medium text-slate-700 mb-1">
                   Matéria
-                </label>
+                </Label>
                 <FilterSelect
                   filter={newMatterId.toString()}
                   setFilter={(id) => setNewMatterId(Number(id))}
@@ -92,9 +93,9 @@ export const NewAssignmentForm = ({
               </div>
             </div>
             <div className="p-4 bg-indigo-50 rounded-lg border border-indigo-100">
-              <label className="block text-sm font-medium text-indigo-900 mb-1">
+              <Label className="block text-sm font-medium text-indigo-900 mb-1">
                 Selecionar Graduação
-              </label>
+              </Label>
               <FilterSelect
                 filter={newDegreeId.toString()}
                 setFilter={(id) => setNewDegreeId(Number(id))}
